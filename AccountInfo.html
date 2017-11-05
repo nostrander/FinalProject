@@ -1,0 +1,93 @@
+﻿<html>
+<head>
+    <title>Account Info</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+
+        $(function () {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="header"></div>
+                <p>
+                    <table style="border: 2px;">
+                        <tr>
+                            <td><b>Account Name</b></td>
+                            <td>
+                                <input class="form-control" placeholder="Username"
+                                       name="userName" id="userName" type="text" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>E-mail Address</td>
+                            <td>
+                                <input class="form-control" placeholder="E-mail Address"
+                                       name="emailAddress" id="emailAddress" type="text"
+                                       pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+                            </td>
+                            <td>
+                                <button onclick="window.location.href=''">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Current GPA</td>
+                            <td>
+                                <input class="form-control" placeholder="GPA"
+                                       name="currentGPA" id="currentGPA" type="text"
+                                       pattern="[0-9]">
+                            </td>
+                            <td>
+                                <button onclick="window.location.href=''">Update</button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button onclick="window.location.href='/AccountInfo.html'">Log In</button>
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+            <hr />
+            <div class="col-md-4">
+                <p>
+                    <table style="border: 0px;">
+                        <tr>
+                            <td>ElementName</td>
+                            <td>
+                                <input class="form-control" placeholder="Name"
+                                       name="elementName" id="elementName" type="text"
+                                       pattern="^[\w\W]{6}$">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ElementValue</td>
+                            <td>
+                                <input class="form-control" placeholder="Value"
+                                       name="elementValue" id="elementValue" type="text"
+                                       pattern="^[\w\W]{6}$">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button onclick="window.location.href=''">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+                <p>
+                </p>
+            </div>
+        </div>
+        <!--Remaining section-->
+        <div id="footer"></div>
+</body>
+</html>
