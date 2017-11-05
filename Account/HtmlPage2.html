@@ -1,0 +1,97 @@
+﻿<html>
+<head>
+    <title></title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+
+        $(function () {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <p>
+        Already have an account with us? Returning users may log in by entering their site username and password.
+        <table style="border: 0px;">
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input class="form-control" placeholder="Username"
+                           name="userName" id="userName" type="text"
+                           pattern="^[\w\W]{6}$">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input class="form-control" placeholder="Password"
+                           name="userPassword" id="userPassword" type="text"
+                           pattern="^[\w\W]{6}$">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="window.location.href='/page2'">Log In</button>
+                </td>
+            </tr>
+        </table>
+    </p>
+    </div>
+    <hr />
+    <div class="col-md-4">
+        <p>
+            New users, please create a new account by providing us with some basic information.
+            <table style="border: 0px;">
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input class="form-control" placeholder="Username"
+                               name="userName" id="userName" type="text"
+                               pattern="^[\w\W]{6}$">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input class="form-control" placeholder="Password"
+                               name="userPassword" id="userPassword" type="text"
+                               pattern="^[\w\W]{6}$">
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail Address</td>
+                    <td>
+                        <input class="form-control" placeholder="Email Address"
+                               name="emailAddress" id="emailAddress" type="email"
+                               title="Email Address (format: xxx@xxx.xxx)"
+                               pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Repeat E-mail Address</td>
+                    <td>
+                        <input class="form-control" placeholder="Repeat Email Address"
+                               name="remailAddress" id="remailAddress" type="email"
+                               title="Repeat Email Address (format: xxx@xxx.xxx)"
+                               pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button onclick="window.location.href='/page2'">Create Account</button>
+                    </td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        </p>
+    </div>
+    </div>
+    <!--Remaining section-->
+    <div id="footer"></div>
+</body>
+</html>
